@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Questão 3 </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div >
+
+        <form action="formulario.php" method="POST" name="formularioCadastro">
+            <fieldset class="fieldset1">
+                <legend class="legend1"> &nbsp; Cadastro Geral &nbsp; </legend>
+
+                <fieldset class="fieldset2">
+                    <legend class="legend2"> Dados Pessoais </legend>
+
+
+
+                    <!-- =====================  ESQUERDA  ===================== -->
+
+                    <table >
+
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td > <label for="nome"> Nome completo: </label> </td>
+                        </tr>
+
+                        <tr>
+                            <td> <input type="text" name="nome" id="nome"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td> <label for="profissao"> Profissão: </label> </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <select name="profissao" id="profissao" >
+                                    <option value="#"> Sua profissão </option>
+                                    <option value=""> Exemplo1 </option>
+                                    <option value=""> Exemplo2 </option>
+                                    <option value=""> Exemplo3 </option>
+                                </select> 
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+
+                <!-- =====================  DIREITA  ===================== -->
+
+                <fieldset class="fieldset3">
+                    <legend class="legend3"> Localização </legend>
+
+                    <table>
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+                        <tr><td> <label for="email"> E-mail: </label> </td></tr>
+
+                        <tr><td> <input type="text" name="email" id="email"></td></tr>
+
+
+                        <tr><td> <label for="rua"> Rua: </label> </td></tr>
+
+                        <tr><td> <input type="text" name="rua" id="rua"></td></tr>
+                    </table>
+                </fieldset>
+
+
+                <!-- =====================  FAIXA ETÁRIA  ===================== -->
+
+
+                <fieldset class="fieldset4">
+                    <legend class="legend4"> Faixa etária </legend>
+
+                    <table>
+                        <tr>
+                            <td colspan="1"><input type="radio" name="idade" id="anos20"></td>
+                            <td colspan="1"><label for="anos20"> até 20 anos </label></td>
+                            
+                            <td><input type="radio" name="idade" id="anos4050"></td>
+                            <td><label for="anos4050"> mais de 40 até 50 anos</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="idade" id="anos2030"></td>
+                            <td><label for="anos2030"> mais de 20 até 30 anos </label></td>
+
+                            <td><input type="radio" name="idade" id="anos5060"></td>
+                            <td><label for="anos5060"> mais de 50 até 60 anos</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="idade" id="anos3040"></td>
+                            <td><label for="anos3040"> mais de 30 até 40 anos </label></td>
+
+                            <td><input type="radio" name="idade" id="anos60"></td>
+                            <td><label for="anos60"> mais de 60 anos </label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+
+                <!-- =====================  ESPORTES QUE PRATICA  ===================== -->
+
+                
+                <fieldset class="fieldset5">
+                    <legend class="legend5"> Esportes que pratica </legend>
+
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" name="futCampo" id="futCampo"></td>
+                            <td><label for="futCampo"> Futebol em campo </label></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="futSalao" id="futSalao"></td>
+                            <td><label for="futSalao"> Futebol de salão </label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="futSocy" id="futSocy"></td>
+                            <td><label for="futSocy"> Futebol society </label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="volleyQuadra" id="volleyQuadra"></td>
+                            <td><label for="volleyQuadra"> Volley de quadra </label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="volleyPraia" id="volleyPraia"></td>
+                            <td><label for="volleyPraia"> Volley de praia </label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="natPiscina" id="natPiscina"></td>
+                            <td><label for="natPiscina"> Natação em piscina </label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="natMar" id="natMar"></td>
+                            <td><label for="natMar"> Natação em mar aberto  </label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+            </fieldset>
+
+                <!-- =====================  COMENTÁRIO  ===================== -->
+
+            <fieldset class="fieldset6">
+                <legend class="legend6"> Comentário </legend>
+
+                <table>
+                    <tr>
+                        <td> <label for="mensagem"> Mensagem: </label></td>
+
+                    </tr>
+                    <tr>
+                        <td> <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+            
+            <table  class="botao">
+                <tr>
+                    <td>
+                        <button type="submit" name="enviar" id="enviar"> Enviar </button>
+                        <button type="reset" name="limpar" id="limpar"> Limpar </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

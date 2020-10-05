@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Questão 2 </title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="2" class="first"> SISTEMA DE GESTÃO ACADÊMICA </td>
+            </tr>
+            <tr>
+                <td colspan="2"> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <form method="POST" name="formularioCadastro">
+                <tr>
+                    <td><label for="login"> Login </label></td>
+                    <td> <input type="text" name="login" id="login"></td>
+                </tr>
+
+                
+                <tr>
+                    <td><label for="login"> Senha </label></td>
+                    <td> <input type="password" name="senha" id="senha"></td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="login"> Status </label></td>
+                    <td> 
+                        <select name="" id="">
+                            <option value="inativo"> Inativo</option>
+                            <option value="ativo"> Ativo</option>
+                         </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><label for=""> Tipo </label></td>
+
+                    <td>    
+                        <input type="radio" name="tipo" id="tecnico">
+                        <label for="tecnico"> Técnico </label>
+
+                        <input type="radio" name="tipo" id="professor">
+                        <label for="professor"> Professor </label>
+
+                        <input type="radio" name="tipo" id="aluno">
+                        <label for="aluno"> Aluno </label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="dtCriacao"> Data de Criação </label></td>
+                    <td> <input type="date" name="dtCriacao" id="dtCriacao"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="perfil"> Perfil </label></td>
+                    <td> 
+                        <input type="radio" name="perfil" id="convidado">
+                        <label for="convidado"> Convidado </label>
+
+                        <input type="radio" name="perfil" id="administrador">
+                        <label for="administrador"> Administrador </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for=""> Observações </label></td>
+                    <td> <textarea name="obs" id="obs" cols="30" rows="5"></textarea> </td>
+                </tr>
+
+                <tr>
+                    <td><label for=""> Módulos </label></td>
+                    <td>
+                        <input type="checkbox" name="compras" id="compras">
+                        <label for="compras"> Compras </label> 
+
+                        <input type="checkbox" name="biblioteca" id="biblioteca">
+                        <label for="biblioteca"> Biblioteca </label> 
+
+                        <input type="checkbox" name="academico" id="academico">
+                        <label for="academico"> Acadêmico </label> 
+
+                        <input type="checkbox" name="documentacao" id="documentacao">
+                        <label for="documentacao"> Documentação </label> 
+
+                        <input type="checkbox" name="recHumanos" id="recHumanos">
+                        <label for="recHumanos"> Recursos Humanos </label> 
+                    </td>
+
+                    <tr>
+                        <td colspan="2"> 
+                            <button type="submit" name="cadastrar" id="cadastrar"> Cadastrar </button>
+                            <button type="reset" name="excluir" id="excluir"> Excluir </button>
+                        </td>
+                         
+                    </tr>
+                </tr>
+
+
+
+
+
+
+            </form>
+        </table>
+    </div>
+</body>
+</html>

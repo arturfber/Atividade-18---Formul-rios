@@ -1,0 +1,33 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+div{
+    width: 50%;
+}
+
+table{
+    width: 100%;
+}
+
+textarea{
+    overflow: scroll;
+    width: 100%;
+}
+
+
+
+table, tr, td {
+    padding:1%;
+}
+
+.first{
+    background-color: #cc9900;
+}
